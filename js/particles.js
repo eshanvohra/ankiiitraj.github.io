@@ -1,5 +1,5 @@
 /*Smooth Scroll on clicking Nav Links*/
-window.onscroll = function(){"use strict"; if(document.body.scrollTop >= 40 || document.documentElement.scrollTop >= 40 || e.classList.contains("open")){document.getElementById('nav').style['background-color'] = '#000000';}else{document.getElementById('nav').style.backgroundColor = '';} if(document.body.scrollTop >= 3*window.innerHeight || document.documentElement.scrollTop >= 3*window.innerHeight){let item = document.querySelectorAll('.active'); item[0].className = 'single';var items = document.querySelectorAll('.single'); items[3].className = 'active';}else if(document.body.scrollTop >= 2*window.innerHeight || document.documentElement.scrollTop >= 2*window.innerHeight){var item = document.querySelectorAll('.active'); item[0].className = 'single';var items = document.querySelectorAll('.single'); items[2].className = 'active';}else if(document.body.scrollTop >= 1*window.innerHeight || document.documentElement.scrollTop >= 1*window.innerHeight){var item = document.querySelectorAll('.active'); item[0].className = 'single';var items = document.querySelectorAll('.single'); items[1].className = 'active';}else{var item = document.querySelectorAll('.active'); item[0].className = 'single';var items = document.querySelectorAll('.single'); items[0].className = 'active';}}
+window.onscroll = function(){"use strict"; if((document.documentElement.scrollTop >= 5 || document.body.scrollTop >= 5) && window.innerWidth < 800){document.getElementById("soc").style['background-color'] = '#1B1B1B'; console.log(123);}else{document.getElementById("soc").style['background-color'] = '';} if(document.body.scrollTop >= 40 || document.documentElement.scrollTop >= 40 || e.classList.contains("open")){document.getElementById('nav').style['background-color'] = '#000000';}else{document.getElementById('nav').style.backgroundColor = '';} if(document.body.scrollTop >= 3*window.innerHeight || document.documentElement.scrollTop >= 3*window.innerHeight){let item = document.querySelectorAll('.active'); item[0].className = 'single';var items = document.querySelectorAll('.single'); items[3].className = 'active';}else if(document.body.scrollTop >= 2*window.innerHeight || document.documentElement.scrollTop >= 2*window.innerHeight){var item = document.querySelectorAll('.active'); item[0].className = 'single';var items = document.querySelectorAll('.single'); items[2].className = 'active';}else if(document.body.scrollTop >= 1*window.innerHeight || document.documentElement.scrollTop >= 1*window.innerHeight){var item = document.querySelectorAll('.active'); item[0].className = 'single';var items = document.querySelectorAll('.single'); items[1].className = 'active';}else{var item = document.querySelectorAll('.active'); item[0].className = 'single';var items = document.querySelectorAll('.single'); items[0].className = 'active';}}
 
 /*Change Color of active links on Nav Bar*/
 let tar = document.getElementById("target");let e = document.getElementById("toggle"); let nelem = document.getElementById("nav");
@@ -26,9 +26,11 @@ function socialWid(){
 		thisId.style.zIndex = '1000';
 	}
 	else{
+		thisId.style.paddingTop = '5px'
+		thisId.style.borderTopLeftRadius = '10px';
+		thisId.style.borderTopRightRadius = '10px';
 		thisId.style.bottom = '0px';
-		thisId.style.textAlign = 'center';
-		thisId.style.backgroundColor = '#1b1b1b'
+		thisId.style.justifyContent = 'space-around'
 		thisId.style.width = '100vw';
 	}
 }
@@ -146,4 +148,4 @@ function draw()
 	}
 }
 setup();
-setTimeout(function(){setInterval(draw, 45)}, 1000);
+setInterval(draw, 45);

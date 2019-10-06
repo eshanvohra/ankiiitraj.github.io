@@ -141,6 +141,7 @@
 
 .social{
 	position: fixed;
+	display: flex;
 	/* background-color: aliceblue; */
 	padding: 2px;
 }
