@@ -19,7 +19,7 @@
 	}
 }
 @media only screen and (max-width: 450px){
-	.details h3, h2, h1{
+	.details h3,.details h2,.details h1{
 		text-align: center !important;
 		margin-left: 0px !important;
 		font-size: 1em !important;
