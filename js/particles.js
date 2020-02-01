@@ -6,7 +6,7 @@ canvas.height = canvas.offsetHeight;
 console.log(canvas.width, canvas.height);
 var dots = [];
 
-var maxDist = mapThese(window.innerWidth, 350, 1400, 150, 170);
+var maxDist = mapThese(window.innerWidth, 350, 1400, 150, 190);
 var colorCount = 0;
 
 class dot{
