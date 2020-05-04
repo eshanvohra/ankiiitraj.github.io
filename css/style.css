@@ -173,13 +173,13 @@
 
 .details h1{
 	color: white;
-	font-size: 3.5em !important;
+	font-size: 4em !important;
 	letter-spacing: 10px;
 	margin-top: 10px !important;
 }
 .details h2{
 	color: antiquewhite;
-	font-size: 1.5em;
+	font-size: 2em;
 	margin-top: -10px  !important;
 	letter-spacing: 3px;
 }
@@ -191,7 +191,7 @@
 	opacity: 0 !important;
 }
 .details h3{
-	font-size: 1.6em;
+	font-size: 2em;
 	color: bisque;
 	margin-top: -40px;
 }
@@ -245,7 +245,7 @@ nav div{
 	margin: .4em .2em .2em .1em;
 	padding: .5em .5em;
 	text-align: center;
-	font-size: 1.2em;
+	font-size: 1.7em;
 	letter-spacing: 2.5px;
 }
 a.single{
@@ -258,7 +258,7 @@ a.single{
 	margin: .2em;
 	padding: .2em;
 	text-align: center;
-	font-size: 2em;
+	font-size: 3em;
 	letter-spacing: 5px;
 }
 li a:hover:not(.active) {
